@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import {ImageBackground} from 'react-native';
+import {ImageBackground, StatusBar} from 'react-native';
 import {Content, View, Text, Button} from 'native-base';
 import Swiper from 'react-native-swiper';
 import Styles from './style';
+import {initApp} from '../../utils/GeneralFunction';
 
 const DATA_SPLASH = [
   {
@@ -60,6 +61,7 @@ const SplashScreen = props => {
 
   return (
     <Content style={{flex: 1}}>
+      <StatusBar backgroundColor="#6c40bd" barStyle="light-content" />
       <View>
         <Swiper
           style={Styles.Swiper}
@@ -69,9 +71,10 @@ const SplashScreen = props => {
           activeDotStyle={{width: 20}}
           ref={Swiper => (_swiper = Swiper)}
           onIndexChanged={i => setIndexSwiper(i)}>
-          {DATA_SPLASH.map(item => {
+          {DATA_SPLASH.map((item, index) => {
             return (
               <SplashPage
+                key={index}
                 image={item.image}
                 maintitle={item.title}
                 subtitle={item.subtitle}
@@ -100,14 +103,24 @@ const SplashScreen = props => {
               <Text style={Styles.ButtonNavNextText}>Lanjutkan</Text>
             </Button>
           ) : (
-            <Button style={Styles.ButtonNavNext}>
+            <Button
+              style={Styles.ButtonNavNext}
+              onPress={() => {
+                props.navigation.replace('LoginRegisterScreen');
+                initApp();
+              }}>
               <Text style={Styles.ButtonNavNextText}>Selesai</Text>
             </Button>
           )}
         </View>
       </View>
       <View style={Styles.ButtonSkip}>
-        <Button transparent>
+        <Button
+          transparent
+          onPress={() => {
+            props.navigation.replace('LoginRegisterScreen');
+            initApp();
+          }}>
           <Text style={Styles.ButtonSkipText}>SKIP</Text>
         </Button>
       </View>
