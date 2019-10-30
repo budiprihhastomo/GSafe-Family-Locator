@@ -5,12 +5,14 @@ import {createStackNavigator} from 'react-navigation-stack';
 import OpenScreen from './Screens/OpenScreen/index';
 import SplashScreen from './Screens/SplashScreen/index';
 import LoginRegisterScreen from './Screens/LoginRegisterScreen/index';
+import MainScreen from './Screens/MainScreen/index';
 
 const Navigation = createStackNavigator(
   {
     OpenScreen,
     SplashScreen,
     LoginRegisterScreen,
+    MainScreen,
   },
   {
     headerMode: 'none',

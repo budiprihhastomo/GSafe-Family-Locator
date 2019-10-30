@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "810063334700",
+    "firebase_url": "https://g-safe-e5dad.firebaseio.com",
+    "project_id": "g-safe-e5dad",
+    "storage_bucket": "g-safe-e5dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810063334700:android:cd0036a42410f3ad8cf089",
+        "android_client_info": {
+          "package_name": "com.gsafe_family_locator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810063334700-7ja5lfde8ni0unoq9eesp7pm1rnf8ste.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gsafe_family_locator",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "810063334700-tisu4gth045fl8tjaijsifocaknjl8u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS98FnCIQqAMcKmL1THuIeJweWXbvwf2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810063334700-tisu4gth045fl8tjaijsifocaknjl8u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

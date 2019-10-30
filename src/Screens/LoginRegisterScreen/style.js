@@ -8,8 +8,9 @@ const Styles = StyleSheet.create({
     flex: 1,
   },
   Content: {
-    flex: 1,
-    marginTop: 10,
+    height: 'auto',
+    marginTop: 20,
+    paddingHorizontal: 30,
   },
   Logo: {
     width: 60,
@@ -17,6 +18,7 @@ const Styles = StyleSheet.create({
   },
   Tabs: {
     elevation: 0,
+    height: 'auto',
   },
   TabStyle: {
     backgroundColor: '#fff',
@@ -43,8 +45,7 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
   },
   WrapInputBox: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    marginVertical: 10,
   },
   ItemInputBox: {
     borderRadius: 5,
@@ -61,7 +62,6 @@ const Styles = StyleSheet.create({
     marginBottom: 10,
   },
   WrapFooter: {
-    paddingHorizontal: 20,
     marginTop: 10,
   },
   ButtonLoginText: {
@@ -80,6 +80,32 @@ const Styles = StyleSheet.create({
     color: '#6c40bd',
     fontWeight: 'bold',
     marginTop: 20,
+  },
+  Grid: {
+    borderBottomWidth: 0.6,
+    borderBottomColor: '#95a5a6',
+    padding: 15,
+  },
+  WrapIcon: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 15,
+  },
+  Icons: {
+    height: 30,
+    width: 30,
+    marginHorizontal: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  IconDetail: {
+    fontSize: 24,
+  },
+  BackgroundLogin: {
+    width: SCREEN_WIDTH,
+    height: 210,
+    marginTop: 10,
   },
 });
 
